@@ -4,7 +4,7 @@ pipeline {
     stage('Maven Install') {
       agent {
         docker {
-          image 'maven:3.9.8'
+          image 'maven:3.9.7-eclipse-temurin-8-focal'
         }
       }
       steps {
