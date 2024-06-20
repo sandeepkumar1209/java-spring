@@ -14,7 +14,7 @@ pipeline {
     stage('Docker Build') {
       agent any
       steps {
-        sh 'docker build -t java-application:1.0.0 .'
+        sh 'sudo docker build -t java-application:1.0.0 .'
       }
     }
   }
